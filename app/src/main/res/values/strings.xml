@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Price Calculator</string>
+    <string name="Rate">Price per kg</string>
+    <string name="Weight">Weight in grams</string>
+    <string name="Cost">Cost of item</string>
+    <string name="rateinput">Rate</string>
+    <string name="commodityInput">Commodity</string>
 </resources>

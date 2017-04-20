@@ -7,31 +7,31 @@ package com.gdgvitvellore.pricecalculator;
 public class Commodity {
 
     private  String mName;
-    private double mRate;
-    private int mWeight;
-    private double mPrice;
+    private static double mRate;
+    private static int mWeight;
+    private static double mCost;
 
     public Commodity(String Name, double Rate, int Weight) {
 
         this.mName = Name;
         this.mRate = Rate;
         this.mWeight = Weight;
-        this.mPrice = ((mWeight / 1000) * mRate);
+        this.mCost = ((mWeight / 1000) * mRate);
     }
 
     public String getName() {
         return mName;
     }
 
-    public double getPrice() {
-        return mPrice;
+    public static double getCost() {
+        return mCost;
     }
 
-    public int getWeight() {
+    public static int getWeight() {
         return mWeight;
     }
 
-    public double getRate() {
+    public static double getRate() {
         return mRate;
     }
 
