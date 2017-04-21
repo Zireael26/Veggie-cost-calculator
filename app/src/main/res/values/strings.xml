@@ -5,4 +5,6 @@
     <string name="Cost">Cost of item</string>
     <string name="rateinput">Rate</string>
     <string name="commodityInput">Commodity</string>
+    <string name="ratePerKg">Rates</string>
+    <string name="orderSummary">Order Summary</string>
 </resources>
