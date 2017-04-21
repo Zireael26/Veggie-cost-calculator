@@ -6,33 +6,33 @@ package com.gdgvitvellore.pricecalculator;
 
 public class Commodity {
 
-    private  String mName;
-    private static double mRate;
-    private static int mWeight;
-    private static double mCost;
+    private String mName;
+    private double mRate;
+    private int mWeight;
+    private double mCost;
 
     public Commodity(String Name, double Rate, int Weight) {
 
         this.mName = Name;
         this.mRate = Rate;
         this.mWeight = Weight;
-        this.mCost = ((mWeight / 1000) * mRate);
+        this.mCost = ((Weight * Rate)/1000);
     }
 
     public String getName() {
-        return mName;
+        return this.mName;
     }
 
-    public static double getCost() {
-        return mCost;
+    public double getCost() {
+        return this.mCost;
     }
 
-    public static int getWeight() {
-        return mWeight;
+    public int getWeight() {
+        return this.mWeight;
     }
 
-    public static double getRate() {
-        return mRate;
+    public double getRate() {
+        return this.mRate;
     }
 
 }

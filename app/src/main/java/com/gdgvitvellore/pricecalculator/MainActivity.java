@@ -10,8 +10,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    private static final int NUM_LIST_ITEMS = 25;
+    ArrayList<Commodity> listOfCommodities = new ArrayList<>();
 
     private RecyclerView mCommList;
     private CommRecAdapter mAdapter;
@@ -21,6 +20,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        listOfCommodities.add(new Commodity("Tomato", 15, 700));
+        listOfCommodities.add(new Commodity("Potato", 10, 967));
+        listOfCommodities.add(new Commodity("Cabbage", 12.5, 1260));
+        listOfCommodities.add(new Commodity("Brinjal", 23, 650));
+        listOfCommodities.add(new Commodity("Cauliflower", 6, 1763));
+        listOfCommodities.add(new Commodity("Tomato", 15, 700));
+        listOfCommodities.add(new Commodity("Tomato", 15, 700));
+        listOfCommodities.add(new Commodity("Tomato", 15, 700));
+        listOfCommodities.add(new Commodity("Tomato", 15, 700));
+
         mCommList = (RecyclerView) findViewById(R.id.rv_commodity);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -28,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         mCommList.setHasFixedSize(true);
 
-        mAdapter = new CommRecAdapter(NUM_LIST_ITEMS);
+        mAdapter = new CommRecAdapter(listOfCommodities);
 
         mCommList.setAdapter(mAdapter);
     }
