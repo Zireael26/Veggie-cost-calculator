@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:contentPadding="3dp"
-        app:cardCornerRadius="5dp"
         android:layout_margin="16dp"
-        android:background="#FFFFFF">
+        android:background="#FFFFFF"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="3dp">
 
         <LinearLayout
-            android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#FFFFFF"
             android:orientation="vertical"
-            android:background="#FFFFFF">
+            android:padding="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="#FFFFFF">
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginBottom="8dp" >
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Rate"
                         android:layout_marginBottom="4dp"
-                        android:maxLines="1"/>
+                        android:maxLines="1"
+                        android:text="@string/Rate" />
 
                     <TextView
                         android:id="@+id/rateVal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="24sp"
-                        android:maxLines="1"/>
+                        android:maxLines="1"
+                        android:textSize="24sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginBottom="8dp">
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Weight"
                         android:layout_marginBottom="4dp"
-                        android:maxLines="1"/>
+                        android:maxLines="1"
+                        android:text="@string/Weight" />
 
                     <TextView
                         android:id="@+id/weightVal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="24sp"
-                        android:maxLines="1"/>
+                        android:maxLines="1"
+                        android:textSize="24sp" />
 
                 </LinearLayout>
 
@@ -79,16 +79,16 @@
                 android:id="@+id/nameOfVegetable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Cost"
                 android:layout_marginBottom="4dp"
-                android:maxLines="1"/>
+                android:maxLines="1"
+                android:text="@string/Cost" />
 
             <TextView
                 android:id="@+id/costVal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"
-                android:maxLines="1"/>
+                android:maxLines="1"
+                android:textSize="24sp" />
 
         </LinearLayout>
     </android.support.v7.widget.CardView>

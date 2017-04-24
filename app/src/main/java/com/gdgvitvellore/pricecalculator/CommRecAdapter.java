@@ -2,7 +2,6 @@ package com.gdgvitvellore.pricecalculator;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +16,7 @@ import java.util.ArrayList;
 public class CommRecAdapter extends RecyclerView.Adapter<CommRecAdapter.CommodityViewHolder> {
 
     private ArrayList<Commodity> mListStuff;
+
     public CommRecAdapter(ArrayList<Commodity> listOfThings) {
         this.mListStuff = listOfThings;
     }
@@ -52,7 +52,7 @@ public class CommRecAdapter extends RecyclerView.Adapter<CommRecAdapter.Commodit
     public class CommodityViewHolder extends RecyclerView.ViewHolder {
         TextView rateTextView, qtyTextView, priceTextView, nameTextView;
 
-        public CommodityViewHolder(View itemView){
+        public CommodityViewHolder(View itemView) {
             super(itemView);
 
             rateTextView = (TextView) itemView.findViewById(R.id.rateVal);
@@ -60,13 +60,5 @@ public class CommRecAdapter extends RecyclerView.Adapter<CommRecAdapter.Commodit
             priceTextView = (TextView) itemView.findViewById(R.id.costVal);
             nameTextView = (TextView) itemView.findViewById(R.id.nameOfVegetable);
         }
-
-       /* void bind(int listIndex) {
-            for(int i=0; i<getItemCount();i++) {
-                rateTextView.setText("" + Commodity.getRate());
-                qtyTextView.setText("" + Commodity.getWeight());
-                priceTextView.setText("" + Commodity.getCost());
-            }
-        }*/
     }
 }

@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/listView"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="24dp"
-    android:paddingTop="24dp"
-    android:paddingRight="16dp"
-    android:paddingLeft="16dp"
     android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingBottom="24dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="24dp"
     tools:context="com.gdgvitvellore.pricecalculator.MainActivity">
 
+    <Button
+        android:id="@+id/switchAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="hello"
+        android:text="Go To Another Activity" />
+
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_commodity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/rv_commodity"
         android:background="#FFFFFF">
 
     </android.support.v7.widget.RecyclerView>
 
-</FrameLayout>
+</LinearLayout>
