@@ -9,9 +9,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by abhishek_cp on 4/20/2017.
- */
 
 public class CommRecAdapter extends RecyclerView.Adapter<CommRecAdapter.CommodityViewHolder> {
 
