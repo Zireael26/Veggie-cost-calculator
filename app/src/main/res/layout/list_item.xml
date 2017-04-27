@@ -83,12 +83,27 @@
                 android:maxLines="1"
                 android:text="@string/Cost" />
 
-            <TextView
-                android:id="@+id/costVal"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLines="1"
-                android:textSize="24sp" />
+                >
+                <TextView
+                    android:id="@+id/costVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="24sp" />
+                <Button
+                    android:id="@+id/delete_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:background="@drawable/deleteicon"/>
+            </RelativeLayout>
+
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
