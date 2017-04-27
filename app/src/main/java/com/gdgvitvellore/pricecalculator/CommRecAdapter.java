@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class CommRecAdapter extends RecyclerView.Adapter<CommRecAdapter.CommodityViewHolder> {
@@ -19,6 +18,7 @@ public class CommRecAdapter extends RecyclerView.Adapter<CommRecAdapter.Commodit
     public CommRecAdapter(ArrayList<Commodity> listOfThings) {
         this.mListStuff = listOfThings;
     }
+
 
     @Override
     public CommodityViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
@@ -31,6 +31,7 @@ public class CommRecAdapter extends RecyclerView.Adapter<CommRecAdapter.Commodit
         View view = inflater.inflate(layoutIdForListItem, viewGroup, shouldAttachParentToImmediately);
         CommodityViewHolder viewHolder = new CommodityViewHolder(view);
 
+
         return viewHolder;
     }
 
@@ -41,12 +42,10 @@ public class CommRecAdapter extends RecyclerView.Adapter<CommRecAdapter.Commodit
         holder.priceTextView.setText("" + mListStuff.get(position).getCost());
         holder.nameTextView.setText("Cost of " + mListStuff.get(position).getName());
 
+
+
     }
 
-    @Override
-    public void onBindViewHolder(CommodityViewHolder holder, int position, List<Object> payloads) {
-        super.onBindViewHolder(holder, position, payloads);
-    }
 
 
     @Override
@@ -67,14 +66,15 @@ public class CommRecAdapter extends RecyclerView.Adapter<CommRecAdapter.Commodit
             priceTextView = (TextView) itemView.findViewById(R.id.costVal);
             nameTextView = (TextView) itemView.findViewById(R.id.nameOfVegetable);
             deleteItem= (Button) itemView.findViewById(R.id.delete_item);
-
             deleteItem.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mListStuff.remove(getAdapterPosition());
                     notifyItemRemoved(getAdapterPosition());
                     notifyItemRangeChanged(getAdapterPosition(), mListStuff.size());
+
                 }
+
             });
 
         }
