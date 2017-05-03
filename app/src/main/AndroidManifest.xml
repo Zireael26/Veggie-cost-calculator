@@ -9,20 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
-            android:name=".PriceInputActivity"
-            android:label="@string/ratePerKg" />
-        <activity android:name=".ItemListingActivity" />
-        <activity
-            android:name=".Main_Activity1"
-            android:label="@string/title_activity_main_1"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".MainActivity"
+            android:label="@string/orderSummary">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".PriceInputActivity"
+            android:label="@string/ratePerKg"></activity>
+        <activity android:name=".ItemListingActivity"></activity>
+        <activity android:name=".BillActivity"></activity>
     </application>
 
 </manifest>

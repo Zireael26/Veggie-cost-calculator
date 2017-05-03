@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "916532743353",
+    "firebase_url": "https://veggie-cost-calculator-e04935d.firebaseio.com",
+    "project_id": "veggie-cost-calculator-e04935d",
+    "storage_bucket": "veggie-cost-calculator-e04935d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916532743353:android:c0136f5f765ffbfe",
+        "android_client_info": {
+          "package_name": "com.gdgvitvellore.pricecalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916532743353-d14vulddjetitmpvc51ubvli0hlo1mml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gdgvitvellore.pricecalculator",
+            "certificate_hash": "52f022aad48f0128fa379bb350edbd17d925eb96"
+          }
+        },
+        {
+          "client_id": "916532743353-de3gmmcgn6d4vu0jpdc0gbge5iv3753u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUIBt7kmRnUv22WLreGy2ToghrSxdRiQU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916532743353-de3gmmcgn6d4vu0jpdc0gbge5iv3753u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
