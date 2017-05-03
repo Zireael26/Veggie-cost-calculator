@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:layout_marginBottom="24dp"
+    android:layout_marginTop="24dp"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
-    android:layout_marginTop="24dp"
-    android:orientation="vertical"
     tools:context="com.gdgvitvellore.pricecalculator.PriceInputActivity">
 
 
-    <EditText
-        android:id="@+id/ed_vegname"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Veggie-Name" />
+        android:id="@+id/tv_commodity">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/commodityInput"/>
+
+    </android.support.design.widget.TextInputLayout>
 
 
-    <EditText
-        android:id="@+id/ed_rate"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number" />
+        android:id="@+id/tv_rate"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/rateinput"/>
+    </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/ed_weight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number" />
-    <Button
-        android:id="@+id/bt_additem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Item"/>
 </LinearLayout>

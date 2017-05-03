@@ -22,10 +22,11 @@ class Commodity {
 
     }
 
-    Commodity(String mName,  double mRate, int mWeight) {
+    Commodity(String mName, double mRate, int mWeight) {
         this.mName = mName;
         this.mRate = mRate;
         this.mWeight = mWeight;
+        this.mCost = ((mWeight * mRate) / 1000);
     }
 
     String getName() {
@@ -33,10 +34,7 @@ class Commodity {
     }
 
     double getCost() {
-
-        mCost = ((mWeight * mRate) / 1000);
-
-        return mCost;
+        return this.mCost;
     }
 
     int getWeight() {
@@ -61,7 +59,7 @@ class Commodity {
         this.mName = mName;
     }
 
-    public void setmRate( double mRate) {
+    public void setmRate(double mRate) {
         this.mRate = mRate;
     }
 

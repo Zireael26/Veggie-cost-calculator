@@ -68,6 +68,8 @@ public class ShoplistAdapter extends RecyclerView.Adapter<ShoplistAdapter.CInput
             linearLayout = (LinearLayout) itemView.findViewById(R.id.colorThis);
             imageView = (ImageView) itemView.findViewById(R.id.imageView);
             imageButton = (ImageButton) itemView.findViewById(R.id.addButton);
+
+            //Todo add a dialog box which asks for weight to be entered in form of dialog box and upload to firedb
         }
     }
 }
