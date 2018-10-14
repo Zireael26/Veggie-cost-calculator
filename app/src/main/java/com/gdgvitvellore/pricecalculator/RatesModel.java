@@ -2,6 +2,7 @@ package com.gdgvitvellore.pricecalculator;
 
 /**
  * Created by shubham on 30/4/17.
+ * And improved by vulfpeck on 15/10/18
  */
 
 public class RatesModel {
